@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2017/07 Jenkins 導入会</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source" style="visibility: hidden">
+class: center, middle
+
+# 2017/07 Jenkins 導入会
+
+by Kenji Saitou
+
+---
+
+# 今日やること
+
+* Motivation: 我々は何に困っているのか？
+* Virtue: 我々の美徳、目指すところは何か？
+* Docker: って何？
+* Docker: Use Cases
+* Docker: とは何じゃないか？
+
+---
+
+# 今日ターゲットにする人
+
+* 新人のみなさん
+* Docker初心者のみなさん
+* 高度なトピックはやりません！
+    * クラスタリングとか
+* まず入り口に立ってもらうのが目的です！
+
+---
+
+class: center, middle
+
+# Motivation
+
+我々は何に困っているのか？
+
+![motivation](motivation.png)
+
+---
+
+## 我々は何に困っているのか？
+
+* 一言＋ありていに言えば、 **サーバ上でどうやってアプリケーションを管理しようか悩んでいる**
+    * デプロイとかの話です
+    * `yum -y install httpd` で入るようなアプリの話でもあります
+
+---
+
+class: center, middle
+
+# Docker Usecase
+
+![:scale 50%](docker.png)
+
+---
+
+## Dockerユースケース
+
+今回は死ぬほど単純なケースを扱いましたが、実際どうやって仕事で応用していけばいいのでしょうか？
+
+---
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+
+    remark.macros.scale = function (percentage) {
+        var url = this;
+        return '<img src="' + url + '" style="width: ' + percentage + '" />';
+    };
+
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
